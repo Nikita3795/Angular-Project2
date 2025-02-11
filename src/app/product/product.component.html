@@ -1,0 +1,8 @@
+<div class="container m-auto w-50">
+    <h2 class="text-primary">Products Name</h2>
+  
+    <ul *ngFor="let i of Products">
+      <li><a [routerLink]="['/p,i.pid']">{{ i.pname }} </a></li>  
+    </ul>
+  </div>
+  
